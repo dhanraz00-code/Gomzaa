@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dhan Raj Tamang | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+
+<nav>
+
+<div class="logo">
+GOMZAA
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#resume">Resume</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#research">Research</a></li>
+
+<li><a href="#certificates">Certificates</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#blog">Blog</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section id="home">
+
+<div class="hero">
+
+<div class="hero-image">
+
+<img src="assets/profile.png" alt="Profile">
+
+</div>
+
+<div class="hero-content">
+
+<h1>DHAN RAJ TAMANG</h1>
+
+<h2>
+Education Professional
+<br>
+Admin Officer
+<br>
+Crisis Management Student
+<br>
+Researcher
+</h2>
+
+<p>
+Passionate about education, research,
+disaster risk reduction,
+academic leadership and crisis management.
+</p>
+
+<div class="buttons">
+
+<a href="#" class="btn">Download CV</a>
+
+<a href="#contact" class="btn2">
+Hire Me
+</a>
+
+</div>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fas fa-envelope"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h1 class="title">About Me</h1>
+
+<div class="card">
+
+<h2>Professional Summary</h2>
+
+<p>
+
+I am an education professional with experience in academic administration,
+school management, examination coordination,
+research and disaster risk reduction.
+My work focuses on improving educational quality,
+organizational effectiveness and community resilience.
+
+</p>
+
+<h2>Career Objective</h2>
+
+<p>
+
+To contribute to educational excellence through innovation,
+leadership, research,
+and effective crisis management while continuously
+enhancing my professional skills.
+
+</p>
+
+<h2>Personal Information</h2>
+
+<table>
+
+<tr>
+<td><strong>Name</strong></td>
+<td>Dhan Raj Tamang</td>
+</tr>
+
+<tr>
+<td><strong>Email</strong></td>
+<td>thegomzaa@gmail.com</td>
+</tr>
+
+<tr>
+<td><strong>Phone</strong></td>
+<td>+977 9861571752</td>
+</tr>
+
+<tr>
+<td><strong>Address</strong></td>
+<td>Permanent: Gangajamuna-02<br>
+Temporary: Tarakeshwor-02</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
