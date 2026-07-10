@@ -6,11 +6,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dhan Raj Tamang | Portfolio</title>
+<title>Dhan Raj Tamang | GOMZAA Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -20,87 +26,291 @@
 
 <div id="particles-js"></div>
 
-<header>
+<div class="cursor"></div>
+
+<!-- ================= Sidebar ================= -->
+
+<aside class="sidebar">
+
+<div class="profile">
+
+<img src="assets/profile.png" alt="Profile">
+
+<h2>Dhan Raj Tamang</h2>
+
+<p>Education Professional</p>
+
+</div>
 
 <nav>
 
-<div class="logo">
-GOMZAA
-</div>
-
 <ul>
 
-<li><a href="#home">Home</a></li>
+<li>
+<a href="#home">
+<i class="fas fa-house"></i>
+<span>Home</span>
+</a>
+</li>
 
-<li><a href="#about">About</a></li>
+<li>
+<a href="#about">
+<i class="fas fa-user"></i>
+<span>About</span>
+</a>
+</li>
 
-<li><a href="#resume">Resume</a></li>
+<li>
+<a href="#resume">
+<i class="fas fa-file"></i>
+<span>Resume</span>
+</a>
+</li>
 
-<li><a href="#experience">Experience</a></li>
+<li>
+<a href="#experience">
+<i class="fas fa-briefcase"></i>
+<span>Experience</span>
+</a>
+</li>
 
-<li><a href="#research">Research</a></li>
+<li>
+<a href="#education">
+<i class="fas fa-graduation-cap"></i>
+<span>Education</span>
+</a>
+</li>
 
-<li><a href="#certificates">Certificates</a></li>
+<li>
+<a href="#research">
+<i class="fas fa-book-open"></i>
+<span>Research</span>
+</a>
+</li>
 
-<li><a href="#gallery">Gallery</a></li>
+<li>
+<a href="#certificates">
+<i class="fas fa-award"></i>
+<span>Certificates</span>
+</a>
+</li>
 
-<li><a href="#blog">Blog</a></li>
+<li>
+<a href="#gallery">
+<i class="fas fa-image"></i>
+<span>Gallery</span>
+</a>
+</li>
 
-<li><a href="#contact">Contact</a></li>
+<li>
+<a href="#blog">
+<i class="fas fa-pen"></i>
+<span>Blog</span>
+</a>
+</li>
+
+<li>
+<a href="#contact">
+<i class="fas fa-envelope"></i>
+<span>Contact</span>
+</a>
+</li>
 
 </ul>
 
 </nav>
 
-</header>
-
-<section id="home">
-
-<div class="hero">
-
-<div class="hero-image">
-
-<img src="assets/profile.png" alt="Profile">
-
-</div>
-
-<div class="hero-content">
-
-<h1>DHAN RAJ TAMANG</h1>
-
-<h2>
-Education Professional
-<br>
-Admin Officer
-<br>
-Crisis Management Student
-<br>
-Researcher
-</h2>
-
-<p>
-Passionate about education, research,
-disaster risk reduction,
-academic leadership and crisis management.
-</p>
-
-<div class="buttons">
-
-<a href="#" class="btn">Download CV</a>
-
-<a href="#contact" class="btn2">
-Hire Me
-</a>
-
-</div>
-
-<div class="social">
+<div class="sidebar-social">
 
 <a href="#"><i class="fab fa-facebook"></i></a>
 
 <a href="#"><i class="fab fa-linkedin"></i></a>
 
+<a href="#"><i class="fab fa-github"></i></a>
+
 <a href="#"><i class="fas fa-envelope"></i></a>
+
+</div>
+
+</aside>
+
+<!-- ================= Main Content ================= -->
+
+<div class="main-content">
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content" data-aos="fade-right">
+
+<h4>Hello, I'm</h4>
+
+<h1>Dhan Raj Tamang</h1>
+
+<h2>
+
+<span class="typing">
+
+Education Professional
+
+</span>
+
+</h2>
+
+<p>
+
+Passionate about educational leadership,
+research,
+administration,
+disaster risk reduction,
+and crisis management.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="btn">
+
+Download CV
+
+</a>
+
+<a href="#contact" class="btn-outline">
+
+Hire Me
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image" data-aos="zoom-in">
+
+<img src="assets/profile.png">
+
+</div>
+
+</section>
+
+<!-- Widgets -->
+
+<section class="stats">
+
+<div class="card">
+
+<i class="fas fa-briefcase"></i>
+
+<h2>05+</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-book"></i>
+
+<h2>15+</h2>
+
+<p>Research Works</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-award"></i>
+
+<h2>30+</h2>
+
+<p>Certificates</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-users"></i>
+
+<h2>100+</h2>
+
+<p>Projects</p>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="section-title">
+
+<h2>About Me</h2>
+
+</div>
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="assets/profile.png">
+
+</div>
+
+<div class="about-text">
+
+<h3>Professional Summary</h3>
+
+<p>
+
+I am an education professional with experience in academic administration,
+school management,
+research,
+disaster risk reduction,
+and crisis management.
+My goal is to strengthen educational systems while contributing to sustainable community development.
+
+</p>
+
+<div class="info-grid">
+
+<div>
+
+<strong>Name</strong>
+
+<span>Dhan Raj Tamang</span>
+
+</div>
+
+<div>
+
+<strong>Email</strong>
+
+<span>thegomzaa@gmail.com</span>
+
+</div>
+
+<div>
+
+<strong>Phone</strong>
+
+<span>+977 9861571752</span>
+
+</div>
+
+<div>
+
+<strong>Address</strong>
+
+<span>Gangajamuna-02, Dhading
+<br>
+Tarakeshwor-02, Kathmandu
+</span>
+
+</div>
 
 </div>
 
@@ -110,61 +320,50 @@ Hire Me
 
 </section>
 
-<section id="about">
+<!-- Resume -->
 
-<h1 class="title">About Me</h1>
+<section id="resume">
 
-<div class="card">
+<div class="section-title">
 
-<h2>Professional Summary</h2>
+<h2>Resume</h2>
 
-<p>
+</div>
 
-I am an education professional with experience in academic administration,
-school management, examination coordination,
-research and disaster risk reduction.
-My work focuses on improving educational quality,
-organizational effectiveness and community resilience.
+<div class="timeline">
 
-</p>
+<div class="timeline-item">
 
-<h2>Career Objective</h2>
+<h3>Admin Officer</h3>
+
+<h4>Apex Life School</h4>
 
 <p>
 
-To contribute to educational excellence through innovation,
-leadership, research,
-and effective crisis management while continuously
-enhancing my professional skills.
+Academic Administration,
+Student Records,
+Examination Management,
+School Operations.
 
 </p>
 
-<h2>Personal Information</h2>
+</div>
 
-<table>
+<div class="timeline-item">
 
-<tr>
-<td><strong>Name</strong></td>
-<td>Dhan Raj Tamang</td>
-</tr>
+<h3>Research</h3>
 
-<tr>
-<td><strong>Email</strong></td>
-<td>thegomzaa@gmail.com</td>
-</tr>
+<p>
 
-<tr>
-<td><strong>Phone</strong></td>
-<td>+977 9861571752</td>
-</tr>
+Disaster Risk Reduction,
+Education,
+Community Resilience,
+Geology,
+Geography.
 
-<tr>
-<td><strong>Address</strong></td>
-<td>Permanent: Gangajamuna-02<br>
-Temporary: Tarakeshwor-02</td>
-</tr>
+</p>
 
-</table>
+</div>
 
 </div>
 
