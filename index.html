@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhan Raj Tamang | Professional Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght={300;400;500;600;700;800}&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <style>
@@ -365,6 +365,168 @@
             border-radius: 20px;
         }
 
+        /* CHATBOT STYLES */
+        .chatbot-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #00d4ff;
+            color: #08131f;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+            z-index: 1000;
+            transition: transform 0.3s ease, background 0.3s;
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.1);
+            background: #00b9df;
+        }
+
+        .chat-container {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 350px;
+            height: 480px;
+            background: #0d1726;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 1000;
+            transform: scale(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .chat-container.active {
+            transform: scale(1);
+        }
+
+        .chat-header {
+            background: #111c2b;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .chat-header-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chat-header-info i {
+            color: #00d4ff;
+            font-size: 20px;
+        }
+
+        .chat-header h3 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .chat-header p {
+            font-size: 11px;
+            color: #00d4ff;
+        }
+
+        .close-chat {
+            cursor: pointer;
+            color: #b8c3ce;
+            transition: color 0.2s;
+        }
+
+        .close-chat:hover {
+            color: white;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 10px 14px;
+            border-radius: 15px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .bot-message {
+            background: #1a273a;
+            color: #e2e8f0;
+            align-self: flex-start;
+            border-bottom-left-radius: 3px;
+        }
+
+        .user-message {
+            background: #00d4ff;
+            color: #08131f;
+            align-self: flex-end;
+            border-bottom-right-radius: 3px;
+            font-weight: 500;
+        }
+
+        .chat-input-area {
+            padding: 15px;
+            background: #111c2b;
+            display: flex;
+            gap: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .chat-input-area input {
+            flex: 1;
+            background: #0d1726;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 15px;
+            border-radius: 25px;
+            color: white;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input-area input:focus {
+            border-color: #00d4ff;
+        }
+
+        .chat-send-btn {
+            background: #00d4ff;
+            color: #08131f;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .chat-send-btn:hover {
+            transform: scale(1.05);
+        }
+
         /* Responsive Breakpoints */
         @media(max-width: 1200px) {
             .about {
@@ -433,6 +595,15 @@
             }
             .info {
                 grid-template-columns: 1fr;
+            }
+            .chat-container {
+                width: calc(100% - 40px);
+                right: 20px;
+                bottom: 90px;
+            }
+            .chatbot-toggle {
+                bottom: 20px;
+                right: 20px;
             }
         }
     </style>
@@ -556,8 +727,8 @@
                     <h3>Academic Journey</h3>
                     <p>My educational background combines academic studies, administrative experience, research activities, and professional development. I continuously seek opportunities to expand my knowledge in education, research, leadership, and disaster risk reduction.</p>
                     <br>
-                    <h4>Current Study:</h4>
-                    <p>Master in Crisis Management Studies</p>
+                    <h4>Current Study</h4>
+                    <p>Bachelor's Degree in Crisis Management</p>
                     <br>
                     <h4>Professional Interests</h4>
                     <ul style="line-height:2;color:#d7d7d7;padding-left:20px;">
@@ -616,6 +787,111 @@
         </section>
 
     </div> <!-- END OF MAIN -->
+
+    <!-- CHATBOT WIDGET -->
+    <div class="chatbot-toggle" id="chatToggle">
+        <i class="fa fa-comments"></i>
+    </div>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <i class="fa fa-robot"></i>
+                <div>
+                    <h3>Dhan's Assistant</h3>
+                    <p>Online</p>
+                </div>
+            </div>
+            <i class="fa fa-xmark close-chat" id="closeChat"></i>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                Hello there! 👋 I am Dhan Raj's virtual assistant. How can I help you today? You can ask me about his experience, education, or contact details!
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type your message here...">
+            <button class="chat-send-btn" id="sendBtn">
+                <i class="fa fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- CHATBOT SCRIPT -->
+    <script>
+        const chatToggle = document.getElementById('chatToggle');
+        const chatContainer = document.getElementById('chatContainer');
+        const closeChat = document.getElementById('closeChat');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+
+        // Toggle Chat Visibility
+        chatToggle.addEventListener('click', () => {
+            chatContainer.classList.add('active');
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatContainer.classList.remove('active');
+        });
+
+        // Function to Send Message
+        function sendMessage() {
+            const messageText = chatInput.value.trim();
+            if (messageText === '') return;
+
+            // User Message
+            appendMessage(messageText, 'user-message');
+            chatInput.value = '';
+
+            // Auto-Scroll
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            // Generate Bot Response
+            setTimeout(() => {
+                const botResponse = getBotResponse(messageText);
+                appendMessage(botResponse, 'bot-message');
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 600);
+        }
+
+        // Append to chat container
+        function appendMessage(text, className) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', className);
+            messageDiv.innerHTML = text;
+            chatMessages.appendChild(messageDiv);
+        }
+
+        // Simple Rule-Based Response Logic
+        function getBotResponse(input) {
+            const query = input.toLowerCase();
+            
+            if (query.includes('hello') || query.includes('hi') || query.includes('hey')) {
+                return "Hello! Hope you're having a great day. What would you like to know about Dhan Raj?";
+            }
+            if (query.includes('experience') || query.includes('work') || query.includes('job')) {
+                return "Dhan Raj has over 7 years of experience in education! He currently serves as an Admin Officer at Apex Life School, and has experience as an Examination Controller and Classroom Teacher.";
+            }
+            if (query.includes('education') || query.includes('study') || query.includes('degree')) {
+                return "He is currently pursuing his Bachelor's Degree in Crisis Management. His academic journey emphasizes disaster risk reduction, educational leadership, and research methods.";
+            }
+            if (query.includes('skills') || query.includes('expert')) {
+                return "His core strengths include Academic Administration (95%), Leadership (96%), Research (90%), and Disaster Risk Reduction (92%).";
+            }
+            if (query.includes('contact') || query.includes('email') || query.includes('phone') || query.includes('hire')) {
+                return "You can reach Dhan Raj directly via email at **thegomzaa@gmail.com** or call him at **+977 9861571752**.";
+            }
+            
+            return "Thanks for asking! I'm a simple assistant, but you can explore his full profile details directly on this page or drop him an email at thegomzaa@gmail.com!";
+        }
+
+        // Listeners for Send
+        sendBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+    </script>
 
 </body>
 </html>
